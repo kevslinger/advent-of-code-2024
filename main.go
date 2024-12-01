@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/kevslinger/advent-of-code-2024/day1"
 )
 
 func main() {
+	day1.RunDay1(GetInputDay(1))
 }
 
 func GetInputDay(day int) string {
