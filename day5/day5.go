@@ -143,8 +143,3 @@ func findIncorrectIndices(update []int, ordering map[int]map[int]bool) (int, int
 	}
 	return firstIncorrectIndex, secondIncorrectIndex
 }
-
-// We need a way to gather rules
-// map[int]map[int]bool
-// maps after number to a set of before number(s)
-// Then as we go through the update, for each number we need to check the numbers after it to see if any break the rules
