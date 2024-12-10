@@ -2,5 +2,5 @@
 
 Mastering Go with Advent of Code!
 
-Last Progress Update: 9-12-2024
-Current Progress: 16/50 stars (32%)
+Last Progress Update: 10-12-2024
+Current Progress: 18/50 stars (36%)
