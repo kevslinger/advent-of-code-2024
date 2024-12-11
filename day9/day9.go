@@ -22,7 +22,6 @@ func part1(file io.Reader) (int, error) {
 	disk := readDisk(file)
 	diskSlice := convertDiskToSlice(disk)
 	diskSlice = compressDiskSlice(diskSlice)
-	fmt.Println(computeChecksum(diskSlice))
 	return int(computeChecksum(diskSlice).Int64()), nil
 }
 
