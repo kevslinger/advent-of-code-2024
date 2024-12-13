@@ -84,7 +84,6 @@ func parseStones(lines []string) *stone {
 
 func simulateStones(headStone *stone, numBlinks int) {
 	for idx := 0; idx < numBlinks; idx++ {
-		fmt.Println(idx)
 		curStone := headStone
 		wg := sync.WaitGroup{}
 		for curStone != nil {
