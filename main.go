@@ -6,6 +6,7 @@ import (
 	"github.com/kevslinger/advent-of-code-2024/day1"
 	"github.com/kevslinger/advent-of-code-2024/day10"
 	"github.com/kevslinger/advent-of-code-2024/day11"
+	"github.com/kevslinger/advent-of-code-2024/day13"
 	"github.com/kevslinger/advent-of-code-2024/day2"
 	"github.com/kevslinger/advent-of-code-2024/day3"
 	"github.com/kevslinger/advent-of-code-2024/day4"
@@ -28,6 +29,7 @@ func main() {
 	day9.RunDay9(GetInputDay(9))
 	day10.RunDay10(GetInputDay(10))
 	day11.RunDay11(GetInputDay(11))
+	day13.RunDay13(GetInputDay(13))
 }
 
 func GetInputDay(day int) string {
