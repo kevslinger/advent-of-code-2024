@@ -157,8 +157,6 @@ func isChristmasTree(grid [][]int) bool {
 				return true
 			}
 			if grid[rowIdx][colIdx] == 1 && bottomsChristmasTree(grid, rowIdx, colIdx) {
-				fmt.Println(rowIdx, colIdx)
-				fmt.Println(grid[rowIdx])
 				return true
 			}
 		}
@@ -172,13 +170,6 @@ func topsChristmasTree(grid [][]int, rowIdx int, colIdx int) bool {
 	for rowIdx < len(grid) && colIdx-separator >= 0 && colIdx+separator < len(grid[rowIdx]) && grid[rowIdx][colIdx-separator] == 1 && grid[rowIdx][colIdx+separator] == 1 {
 		rowIdx++
 		separator++
-	}
-	if separator > 2 {
-		fmt.Println(rowIdx, separator)
-		fmt.Println(grid[rowIdx-3])
-		fmt.Println(grid[rowIdx-2])
-		fmt.Println(grid[rowIdx-1])
-		fmt.Println(grid[rowIdx])
 	}
 
 	// Need to go back up 1 row
