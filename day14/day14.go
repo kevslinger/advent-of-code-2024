@@ -55,7 +55,6 @@ func part2(file io.Reader) (int, error) {
 		return -1, err
 	}
 	for stepNum := 1; stepNum <= 1000; stepNum++ {
-		fmt.Println(stepNum)
 		simulateRobotStep(robots)
 		robotGrid := plotRobots(robots)
 		if isChristmasTree(robotGrid) {
